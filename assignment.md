@@ -26,6 +26,9 @@ Answer:
 
 ```python
 
+# Calculate correlation between MSFT and IBM returns
+correlation = returns['MSFT'].corr(returns['IBM'])
+
 ```
 
 ### Question 2
@@ -46,6 +49,8 @@ Answer:
 
 ```python
 
+df_long = pd.melt(df,value_vars=['A','B','C'], var_name='Variable', value_name='Value')
+
 ```
 
 ### Question 3
@@ -63,6 +68,8 @@ data = pd.Series(np.random.rand(len(dates)), index=dates)
 Answer:
 
 ```python
+
+sliced_data = data["2023-01-05":"2023-01-15"]
 
 ```
 
